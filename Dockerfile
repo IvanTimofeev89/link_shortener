@@ -25,4 +25,4 @@ COPY . .
 EXPOSE 8080
 
 # Specify the command to run on container start
-CMD [ "python3", "-m", "flask", "run"]
+CMD ["gunicorn", "-b", "0.0.0.0:8080", "wsgi:app"]
