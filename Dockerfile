@@ -1,5 +1,5 @@
 # pull official base image
-FROM python:3.12-slim
+FROM python:3.12-alpine
 
 # Set up environment variables for Python
 ENV PYTHONDONTWRITEBYTECODE 1
